@@ -65,7 +65,7 @@ function EditPost(props) {
                             className="form-control"
                             onChange={e => setDescription(e.target.value)}
                             placeholder="Enter your description here..."
-                            rows="4"></textarea>
+                            rows="8"></textarea>
                     </div>
 
                     <button type="submit" className="btn btn-outline-primary">Update Post</button>

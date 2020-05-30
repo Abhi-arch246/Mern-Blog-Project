@@ -11,7 +11,7 @@ function Header() {
 
 //Main Container
 const MainContainer=styled.header`
-    background:url("https://images.unsplash.com/photo-1526470095252-8aff668ab8bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80") no-repeat center/cover;
+    background:url("https://images.unsplash.com/photo-1532703108233-69111d554cb4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80") no-repeat center/cover;
     height:15rem;
 
 `;

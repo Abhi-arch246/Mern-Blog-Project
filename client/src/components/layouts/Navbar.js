@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 function Navbar() {
     return (
         <NavbarContainer>
-            <nav className="navbar navbar-expand-lg navbar-light px-5">
+            <nav className="navbar navbar-expand-lg navbar-light bg-primary px-5">
                 <Link to="/" className="navbar-brand">MERN</Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
