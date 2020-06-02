@@ -10,7 +10,7 @@ const Posts=({ posts }) =>{
 
     //Delete Post
     const delPost = id=>{
-        axios.delete(`/${id}`).then(res=>alert(res.data)).catch(err=>console.log(err));
+        axios.delete(`/api/crud/${id}`).then(res=>alert(res.data)).catch(err=>console.log(err));
         setPost(post.filter(elem =>elem._id !== id));
     };
 

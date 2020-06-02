@@ -20,7 +20,7 @@ function AddPost() {
         setAuthorName("")
         setDescription("")
 
-        axios.post("/add",cards)
+        axios.post("/api/crud/add",cards)
         .then(res=> setMessage(res.data)).catch(err=>console.log(err));
     };
 

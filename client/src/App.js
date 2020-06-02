@@ -19,7 +19,7 @@ require('bootstrap/dist/js/bootstrap.min.js');
 function App() {
   const [posts,setPosts]=useState([])
   useEffect(()=>{
-    axios.get('http://localhost:8080/')
+    axios.get('/api/crud')
     .then(res=>setPosts(res.data))
     .catch(err=>console.log(err));
   })
