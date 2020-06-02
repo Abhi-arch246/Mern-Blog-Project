@@ -20,12 +20,12 @@ function EditPost(props) {
         setAuthorName("")
         setDescription("")
 
-        axios.put(`http://localhost:8080/update/${props.match.params.id}`, cards)
+        axios.put(`/update/${props.match.params.id}`, cards)
         .then(res => setMessage(res.data)).catch(err => console.log(err));
     };
 
     useEffect(() => {
-        axios.get(`http://localhost:8080/${props.match.params.id}`).then(res => [
+        axios.get(`/${props.match.params.id}`).then(res => [
             setTitle(res.data.title),
             setAuthorName(res.data.authorname),
             setDescription(res.data.description)

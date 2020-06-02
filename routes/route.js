@@ -11,7 +11,6 @@ router.get("/",(req,res)=>{
             return next(err);
         }
         else{
-            console.log(data);
             res.json(data);
         }
     })

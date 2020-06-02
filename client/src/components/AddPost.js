@@ -20,7 +20,7 @@ function AddPost() {
         setAuthorName("")
         setDescription("")
 
-        axios.post("http://localhost:8080/add",cards)
+        axios.post("/add",cards)
         .then(res=> setMessage(res.data)).catch(err=>console.log(err));
     };
 

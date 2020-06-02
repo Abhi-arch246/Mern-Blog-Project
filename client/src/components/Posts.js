@@ -10,7 +10,7 @@ const Posts=({ posts }) =>{
 
     //Delete Post
     const delPost = id=>{
-        axios.delete(`http://localhost:8080/${id}`).then(res=>alert(res.data)).catch(err=>console.log(err));
+        axios.delete(`/${id}`).then(res=>alert(res.data)).catch(err=>console.log(err));
         setPost(post.filter(elem =>elem._id !== id));
     };
 
