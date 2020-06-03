@@ -2,6 +2,7 @@ const express=require('express');
 const app=express();
 const cors=require('cors');
 const mongoose=require('mongoose');
+const PORT=process.env.PORT || 8080;
 
 app.use(cors());
 app.use(express.json());
@@ -15,4 +16,4 @@ const postRouter=require('./routes/route');
 app.use("/api/crud",postRouter);
 
 
-app.listen(8080,()=>console.log("Running on port 8080"));
+app.listen(PORT,()=>console.log("Running on port 8080"));
